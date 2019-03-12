@@ -14,11 +14,9 @@ int main(void)
         total = get_float();
     }
     while (total < 0);
-    //convert dollars to cents
+    //convert dollars to cents and round to integer
     cents = total * 100;
-
-    //define whole number variable and round to integer
-    //printf("%.0f\n", cents);
+    cents = round(cents);
 
     //define coins and quarters
     int coins = 0, quarters = 25;
